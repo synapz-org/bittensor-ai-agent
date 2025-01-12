@@ -1,0 +1,18 @@
+api:
+  base_url: "https://api.taostats.io"
+  timeout: 30
+  max_retries: 3
+
+monitoring:
+  update_interval: 300 # 5 minutes
+  alert_thresholds:
+    emission_change: 0.1
+    pow_threshold: 0.8
+
+database:
+  path: "data/metrics.db"
+  backup_interval: 86400 # 24 hours
+
+logging:
+  level: "INFO"
+  file: "logs/agent.log"
